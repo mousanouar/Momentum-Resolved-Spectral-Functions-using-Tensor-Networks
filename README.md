@@ -1,6 +1,4 @@
 # Momentum-Resolved-Spectral-Functions-using-Tensor-Networks
 
-This repository can be used to guide the reader of [2512.18397](https://arxiv.org/abs/2512.18397) to reproduce the results shown in the manuscript at a smaller scale using the notebook attached. 
-The notebook provides a step-by-step guide to calculate similar results that are presented in the manuscript. 
-To ease computation time, very small system sizes are taken here in order to examplify the framework. If the reader wishes to reach similar system sizes as in the manuscript (and beyond), 
-I suggest you run these calculations on a cluster and make use of gpu capabilities. 
+This repository accompanies [2512.18397](https://arxiv.org/abs/2512.18397) and is intended to guide readers in reproducing the results presented in the manuscript at reduced system sizes using the provided notebook.
+The notebook offers a step-by-step workflow for computing quantities analogous to those reported in the paper. For computational tractability, the examples use very small system sizes to illustrate the framework. Readers aiming to approach the system sizes considered in the manuscript (or larger) are advised to run the calculations on a computing cluster and to leverage GPU acceleration.
