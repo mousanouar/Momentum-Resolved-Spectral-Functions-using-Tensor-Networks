@@ -1,4 +1,53 @@
 # Momentum-Resolved-Spectral-Functions-using-Tensor-Networks
 
-This repository accompanies [2512.18397](https://arxiv.org/abs/2512.18397) and is intended to guide readers in reproducing the results presented in the manuscript at reduced system sizes using the provided notebook.
-The notebook offers a step-by-step workflow for computing quantities analogous to those reported in the paper. For computational tractability, the examples use very small system sizes to illustrate the framework. Readers aiming to approach the system sizes considered in the manuscript (or larger) are advised to run the calculations on a computing cluster and to leverage GPU acceleration.
+Code and data accompanying the manuscript: **[2512.18397](https://arxiv.org/abs/2512.18397)**. This repository provides a reference implementation of tensor network methods for momentum-resolved spectral functions in tight-binding systems.
+
+This repository aims to:
+- Provide core algorithms used in the paper
+- Include example workflows showing basic usage
+- Offer minimal reproducible examples at small system sizes
+
+---
+
+## Repository structure
+
+### `Main_Modules`
+
+Core implementations of the methods presented in the manuscript:
+- `Hamiltonians.jl`: Used to construct Hamiltonians as a matrix product operator (MPO)
+- `QuantumKPM.jl`: Kernel Polynomial Algorithms and routines for observables
+- `kin_builders.jl`: helper functions to build kinetic operators in MPO format for Hamiltonians
+
+### `Examples notebook`
+
+Examples (same as in the manuscript) illustrating methodology at tractable system sizes:
+- `Examples_TNMSF.ipynb`: Step-by-step notebook showing how to build Hamiltonians, compute observables, and visualize results
+
+---
+
+## Installation
+
+The code is written in **Julia**. The required packages are shown below.
+
+### Required packages
+
+Run the following in the Julia REPL before using the repository:
+```julia
+using Pkg
+
+Install all dependencies via:
+
+```julia
+using Pkg
+
+Pkg.add([
+    "ITensors",
+    "ITensorMPS",
+    "Quantics",
+    "QuanticsTCI",
+    "TensorCrossInterpolation",
+    "TCIITensorConversion",
+    "ProgressMeter",
+    "Plots",
+    "LaTeXStrings"
+])
