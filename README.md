@@ -6,6 +6,7 @@ This repository aims to:
 - Provide core algorithms used in the paper
 - Include example workflows showing basic usage
 - Offer minimal reproducible examples at small system sizes
+- If the notebook does not render, use https://nbviewer.org
 
 ---
 
