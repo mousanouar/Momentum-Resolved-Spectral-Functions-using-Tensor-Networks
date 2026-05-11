@@ -1,6 +1,6 @@
 # Momentum-Resolved-Spectral-Functions-using-Tensor-Networks
 
-Code and data accompanying the manuscript: **[2512.18397](https://arxiv.org/abs/2512.18397)**. This repository provides a reference implementation of tensor network methods for momentum-resolved spectral functions in tight-binding systems.
+Code and data accompanying the manuscript: **[2512.18397](https://arxiv.org/abs/2512.18397)** **[(Phys. Rev. Res.)](https://doi.org/10.1103/9btt-y8sh)**. This repository provides a reference implementation of tensor network methods for momentum-resolved spectral functions in tight-binding systems.
 
 This repository aims to:
 - Provide core algorithms used in the paper
